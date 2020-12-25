@@ -1,4 +1,4 @@
 # certbot-dns-scripts
 scripts for Certbot DNS validation
 
-They only work for [dynu.com](dynu.com) API.
+They only work with [dynu.com](dynu.com) API.
