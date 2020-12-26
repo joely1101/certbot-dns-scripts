@@ -31,3 +31,6 @@ certbot certonly --manual --preferred-challenges=dns\
 I might decide to support OAuth2 someday, but for now, only API keys are supported.
 
 However, if someone opens a pull request for OAuth2, I will definitely accept it.
+
+
+Add automatic copying of certs over ssh or make a script for that
