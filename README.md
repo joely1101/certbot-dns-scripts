@@ -2,6 +2,10 @@
 scripts for Certbot DNS validation
 
 They only work with [dynu.com](dynu.com) API.
+## Important: READ THIS BEFORE CONTINUING
+
+https://letsencrypt.org/docs/challenge-types/#dns-01-challenge
+
 ## howto
 Put your apikey in... the apikey file. **THIS MUST BE KEPT SECRET!** If someone gets it, regenerate it from the User Control Panel.
 
