@@ -4,6 +4,7 @@ scripts for Certbot DNS validation
 They only work with [dynu.com](dynu.com) API.
 ## Important: READ THIS BEFORE CONTINUING
 > Note that putting your fully DNS API credentials on your web server significantly increases the impact if that web server is hacked. Best practice is to use more narrowly scoped API credentials, or perform DNS validation from a separate server and automatically copy certificates to your web server.
+
 https://letsencrypt.org/docs/challenge-types/#dns-01-challenge
 
 ## howto
