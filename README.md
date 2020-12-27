@@ -15,6 +15,7 @@ https://letsencrypt.org/docs/challenge-types/#dns-01-challenge
 #### API key
 
 User Control Panel -> API credentials -> find the API key, **not the OAuth2 one**
+
 Put your apikey in... the apikey file. **THIS MUST BE KEPT SECRET!** If someone gets it, regenerate it from the User Control Panel.
 #### TXT record ID extraction
 
@@ -35,7 +36,7 @@ Then, dump it into the "id" file.
 
 We are now done with the preparation.
 
-Put authenticator.sh and cleanup.sh somewhere. (these are not confidential) 
+Put authenticator.sh, cleanup.sh, id and apikey (<== chmod 600 this) somewhere. 
 
 Make a cron job for running this command:
 
