@@ -37,7 +37,7 @@ Then, dump "id" into the "txt_id" file and "domain_id" into the "domain_id" file
 
 We are now done with the preparation.
 
-Put authenticator.sh, cleanup.sh, txt_id,(<== chmod 600 this) somewhere. 
+Put authenticator.sh, cleanup.sh, txt_id, domain_id and apikey (chmod 600 apikey) somewhere. authenticator.sh and cleanup.sh need txt_id, domain_id and apikey in their close presence (same directory). 
 
 Make a cron job for running this command:
 
