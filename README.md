@@ -8,7 +8,32 @@ They only work with [dynu.com](dynu.com) API.
 https://letsencrypt.org/docs/challenge-types/#dns-01-challenge
 
 ## howto
+### Needed things
+1. API key
+2. ID of the TXT record
+
+#### API key
+
+User Control Panel -> API credentials -> find the API key, **not the OAuth2 one**
 Put your apikey in... the apikey file. **THIS MUST BE KEPT SECRET!** If someone gets it, regenerate it from the User Control Panel.
+#### TXT record ID extraction
+
+If not already done, make a TXT record (for 3rd level domains, wait 31 days) with node name _acme-challenge.
+
+Find its ID with this command: 
+
+```bash 
+curl -X GET https://api.dynu.com/v2/dns/record/_acme-challenge.[your hostname].com\?recordType\=TXT\
+        -H "accept: application/json" \
+        -H "API-Key: [redacted]"
+```
+Find the line that contains "id".
+
+Then, find the value.
+
+Then, dump it into the "id" file.
+
+We are now done with the preparation.
 
 Put authenticator.sh and cleanup.sh somewhere. (these are not confidential) 
 
