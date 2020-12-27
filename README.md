@@ -31,15 +31,13 @@ curl -X GET https://api.dynu.com/v2/dns/record/_acme-challenge.[your hostname].c
         -H "accept: application/json" \
         -H "API-Key: [redacted]"
 ```
-Find the line that contains "id".
+Find the line that contains "id" and the one that contains domain_id.
 
-Then, find the value.
-
-Then, dump it into the "id" file.
+Then, dump "id" into the "txt_id" file and "domain_id" into the "domain_id" file.
 
 We are now done with the preparation.
 
-Put authenticator.sh, cleanup.sh, id and apikey (<== chmod 600 this) somewhere. 
+Put authenticator.sh, cleanup.sh, txt_id,(<== chmod 600 this) somewhere. 
 
 Make a cron job for running this command:
 
