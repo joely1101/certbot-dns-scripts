@@ -1,3 +1,6 @@
+# warning
+I am working on the README. It is incomplete.
+
 # certbot-dns-scripts
 scripts for Certbot DNS validation
 
